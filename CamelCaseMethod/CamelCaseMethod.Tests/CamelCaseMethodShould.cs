@@ -17,7 +17,7 @@ namespace CamelCaseMethod.Tests {
             Assert.AreEqual("HelloDarkness", "hello darkness".CamelCase());
         }
 
-        [Test, Ignore("Not implemented yet")]
+        [Test]
         public void AcceptanceTests() {
             Assert.AreEqual("TestCase", "test case".CamelCase());
             Assert.AreEqual("CamelCaseMethod", "camel case method".CamelCase());
