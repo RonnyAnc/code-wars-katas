@@ -2,7 +2,7 @@ using NUnit.Framework;
 
 namespace SplitStrings.Tests {
     [TestFixture]
-    public class SplitStringTests {
+    public class SplitStringShould {
         [Test]
         public void return_same_value_when_input_has_only_two_characters() {
             const string simpleInput = "ab";
@@ -11,8 +11,14 @@ namespace SplitStrings.Tests {
 
         [Test]
         public void add_underscore_when_odd_input() {
-            const string simpleInput = "a";
-            Assert.AreEqual(new[] {"a_"}, SplitString.Solution(simpleInput));
+            const string simpleOddInput = "a";
+            Assert.AreEqual(new[] {"a_"}, SplitString.Solution(simpleOddInput));
+        }
+        
+        [Test]
+        public void split_multiple_pairs() {
+            const string simpleOddInput = "abcd";
+            Assert.AreEqual(new[] {"ab", "cd"}, SplitString.Solution(simpleOddInput));
         }
 
         [Test, Ignore("Not yet")]
