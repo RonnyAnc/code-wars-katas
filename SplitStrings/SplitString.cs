@@ -3,7 +3,10 @@
     {
         public static string[] Solution(string str)
         {
-            return new []{"ab"};
+            if (str.Length == 1) {
+                str += "_";
+            }
+            return new []{str};
         }
     }
 }
