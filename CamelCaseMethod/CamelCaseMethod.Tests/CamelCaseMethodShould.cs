@@ -11,6 +11,11 @@ namespace CamelCaseMethod.Tests {
         public void transform_single_word_to_upper() {
             Assert.AreEqual("Hello", "hello".CamelCase());
         }
+        
+        [Test]
+        public void transform_multiple_words_to_upper() {
+            Assert.AreEqual("HelloDarkness", "hello darkness".CamelCase());
+        }
 
         [Test, Ignore("Not implemented yet")]
         public void AcceptanceTests() {
