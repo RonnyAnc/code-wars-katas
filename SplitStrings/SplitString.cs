@@ -1,15 +1,24 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace SplitStrings {
     public static class SplitString
     {
-        public static string[] Solution(string str) {
-            var sanitized = (str.Length % 2 == 0) ? str : $"{str}_";
-            var splittedInput = new List<string>();
-            for (var i = 0; i < sanitized.Length; i += 2) {
-                splittedInput.Add($"{sanitized[i]}{sanitized[i + 1]}");
+        private const char completionCharacter = '_';
+
+        private static List<string> SplitByPairs(string input) {
+            var pairs = new List<string>();
+            for (var i = 0; i < input.Length; i += 2) {
+                pairs.Add($"{input[i]}{input[i + 1]}");
             }
-            return splittedInput.ToArray();
+            return pairs;
+        }
+        
+        public static string[] Solution(string str) {
+            bool HasEvenLength() => str.Length % 2 == 0;
+            var sanitized = HasEvenLength() ? str : $"{str}{completionCharacter}";
+            var pairs = SplitByPairs(sanitized);
+            return pairs.ToArray();
         }
     }
 }
