@@ -7,13 +7,13 @@ namespace CamelCaseMethod {
         private const string Separator = " ";
 
         private static string ToCamelCase(string word) {
-            if (string.IsNullOrEmpty(word)) return string.Empty;
-
             var upperLetter = $"{word[0]}".ToUpper();
             return $"{upperLetter}{word.Substring(1)}";
         }
         
         public static string CamelCase(this string str) {
+            if (string.IsNullOrEmpty(str)) return string.Empty;
+            
             return str
                 .Trim()
                 .Split(Separator)
