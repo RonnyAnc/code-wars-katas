@@ -7,9 +7,13 @@ namespace CamelCaseMethod.Tests {
             Assert.AreEqual("H", "h".CamelCase());
         }
         
+        [Test]
+        public void transform_single_word_to_upper() {
+            Assert.AreEqual("Hello", "hello".CamelCase());
+        }
+
         [Test, Ignore("Not implemented yet")]
-        public void AcceptanceTests()
-        {
+        public void AcceptanceTests() {
             Assert.AreEqual("TestCase", "test case".CamelCase());
             Assert.AreEqual("CamelCaseMethod", "camel case method".CamelCase());
             Assert.AreEqual("SayHello", "say hello".CamelCase());
