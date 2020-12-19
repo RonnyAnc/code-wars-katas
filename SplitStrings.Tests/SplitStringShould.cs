@@ -21,7 +21,7 @@ namespace SplitStrings.Tests {
             Assert.AreEqual(new[] {"ab", "cd"}, SplitString.Solution(simpleOddInput));
         }
 
-        [Test, Ignore("Not yet")]
+        [Test]
         public void AcceptanceTests() {
             Assert.AreEqual(new string[] {"ab", "c_"}, SplitString.Solution("abc"));
             Assert.AreEqual(new string[] {"ab", "cd", "ef"}, SplitString.Solution("abcdef"));
