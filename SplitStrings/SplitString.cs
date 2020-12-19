@@ -6,19 +6,17 @@ namespace SplitStrings {
     {
         private const char completionCharacter = '_';
 
-        private static List<string> SplitByPairs(string input) {
-            var pairs = new List<string>();
-            for (var i = 0; i < input.Length; i += 2) {
-                pairs.Add($"{input[i]}{input[i + 1]}");
-            }
-            return pairs;
+        private static string[] SplitByPairs(string input) {
+            return Enumerable.Range(0, input.Length)
+                .Where(index => index % 2 == 0)
+                .Select(index => input.Substring(index, 2))
+                .ToArray();
         }
         
         public static string[] Solution(string str) {
             bool HasEvenLength() => str.Length % 2 == 0;
             var sanitized = HasEvenLength() ? str : $"{str}{completionCharacter}";
-            var pairs = SplitByPairs(sanitized);
-            return pairs.ToArray();
+            return SplitByPairs(sanitized);
         }
     }
 }
