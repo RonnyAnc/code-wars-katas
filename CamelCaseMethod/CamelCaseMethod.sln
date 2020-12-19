@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamelCaseMethod", "CamelCaseMethod\CamelCaseMethod.csproj", "{EC1E51C7-76E9-4D0B-863F-269E4C44A3CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamelCaseMethod.Tests", "CamelCaseMethod.Tests\CamelCaseMethod.Tests.csproj", "{D5DE5A73-33EC-4B56-A6A9-8CDEA7A462E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC1E51C7-76E9-4D0B-863F-269E4C44A3CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC1E51C7-76E9-4D0B-863F-269E4C44A3CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC1E51C7-76E9-4D0B-863F-269E4C44A3CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC1E51C7-76E9-4D0B-863F-269E4C44A3CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5DE5A73-33EC-4B56-A6A9-8CDEA7A462E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5DE5A73-33EC-4B56-A6A9-8CDEA7A462E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5DE5A73-33EC-4B56-A6A9-8CDEA7A462E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5DE5A73-33EC-4B56-A6A9-8CDEA7A462E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
