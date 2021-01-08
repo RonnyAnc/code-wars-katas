@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanReadableTime", "HumanReadableTime\HumanReadableTime.csproj", "{7F7365BD-955B-42D6-8FB9-F19F79ECAC6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HumanReadableTime.Tests", "HumanReadableTime.Tests\HumanReadableTime.Tests.csproj", "{38658EEE-E78F-4849-9B90-501D3753E023}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F7365BD-955B-42D6-8FB9-F19F79ECAC6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F7365BD-955B-42D6-8FB9-F19F79ECAC6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F7365BD-955B-42D6-8FB9-F19F79ECAC6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F7365BD-955B-42D6-8FB9-F19F79ECAC6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38658EEE-E78F-4849-9B90-501D3753E023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38658EEE-E78F-4849-9B90-501D3753E023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38658EEE-E78F-4849-9B90-501D3753E023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38658EEE-E78F-4849-9B90-501D3753E023}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BE8854CB-7F06-41FF-9F00-5DBE17F732A5}
+	EndGlobalSection
+EndGlobal
